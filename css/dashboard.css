@@ -1,0 +1,20 @@
+/* img{
+    width: 70%;
+} */
+.logo-img{
+    width:20vh;
+}
+.search-img{
+    width:3vh;
+}
+.notification-img{
+    width: 3vh;
+}
+/* #sideBar:hover{
+    display: none;
+}
+
+#menuBar:hover {
+    display: block;
+    background-color: aqua;
+} */
