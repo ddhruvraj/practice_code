@@ -1,0 +1,227 @@
+.main-container {
+    min-height: 100vh;
+}
+
+.main-column {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("/images/luxa.org-opacity-changed-11116016_415.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* uncomment below line for making column fixed in window */
+    width: 60vh;
+
+
+}
+
+.darkmode-div {
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+}
+
+#darkmode-btn {
+    border-radius: 5px;
+    border-color: #08BCEB;
+    background-color: white;
+
+}
+
+.darkmode-img {
+    color: #08BCEB;
+
+}
+
+
+#heading {
+    margin-bottom: 10%;
+}
+
+.back-div {
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+/* below class is used for both forgot password link and back link */
+.forgot-pw {
+    color: #08BCEB;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.form-floating {
+    width: 80%;
+
+    margin-top: 20px;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    color: #08BCEB;
+}
+
+.input-icon {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #fafafa;
+    width: 30px;
+    height: 70%;
+    border: none;
+}
+
+
+
+.login-btn {
+    background-color: #08BCEB;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.login-btn1 {
+    background-color: #030376;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.terms-div {
+    margin-top: auto;
+}
+
+#terms {
+    font-size: small;
+}
+
+/* @media screen and (max-width:990px){
+    .left-col{
+        display: none;
+    }
+
+  
+    .main-container::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%        ;
+        z-index: -1;
+        opacity: 0.3;
+        background: url('/images/11116016_415.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+       
+    }
+} */
+
+
+
+/* ---------------css for submit request page--------------- */
+.main-row {
+    max-height: 80vh;
+}
+
+.main-column-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60vh;
+
+
+}
+
+.text-btn-div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 63%;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.back-btn {
+    border-color: #08BCEB;
+    border-width: 2px;
+    color: #08BCEB;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: transparent;
+
+
+}
+
+.back-btn:hover {
+    background-color: #000000;
+
+}
+
+.login-button {
+    width: 35vh;
+    height: 1px;
+    margin-top: 20px;
+    text-align: start;
+    padding-bottom: 10%;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.login-button:hover {
+    border-color: #000000;
+    color: #000000;
+}
+
+.btn1 {
+    color: #5c33c4;
+    background-color: #ddd4f2;
+    border-color: #9789ba;
+}
+
+.btn2 {
+    color: #08BCEB;
+    background-color: #cde4eb;
+    border-color: #7bcade;
+}
+
+.btn3 {
+    color: #276325;
+    background-color: #cae9c9;
+    border-color: #95cc93;
+}
+
+.btn4 {
+    color: #77127a;
+    background-color: #f6d8f7;
+    border-color: #bf7fc1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    text-align: right;
+
+}
+
+.terms {
+    color: white;
+    margin-right: 2%;
+    font-size: small;
+    margin-bottom: -2%;
+
+}
+
+.logo-img-1 {
+    margin-top: auto;
+    width: 17vh;
+}

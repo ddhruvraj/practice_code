@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create patient request form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css\create_patient_request.css">
+    <script src="js\platform_login.js"></script>
+</head>
+
+<body onload="load()">
+    <button id="btn_modal" type="button" class="d-none btn btn-primary">
+        Launch demo modal
+    </button>
+    <!-- <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+       -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <!-- <div class="">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+                <div class="modal-body d-flex justify-content-center align-items-center mt-4">
+                    <img style="width: 100px; height: 100px;" src="images\info_img1.jpeg" alt="">
+                </div>
+                <h3 class="text-center mb-2">Information</h3>
+                <p class="text-center mx-5">when submitting a request you must provide the correct contact information
+                    for the patient or the responsibly party.failure to provide correct email and phone number will
+                    delay service or be declined.</p>
+
+                <div class="d-flex justify-content-center align-items-center mb-5 mt-3">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    <!-- <button type="button" class="btn btn-primary">OK</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <img class="logo-img-1" src="images\Fig56._Patient_site_1.png" alt="">
+
+
+            <div class="darkmode-div">
+                <button id="darkmode-btn" onclick="myFunction()">
+                    <img class="darkmode-img" src="images\moon.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+    </nav>
+    <form action="" class="form">
+        <div class="container-fluid main-container ">
+            <!-- <div class="d-flex justify-content-end  " style="width: 82vw; justify-content: center;">
+                <button class="back-btn btn ms-auto">Back</button>
+            </div> -->
+            <div class="row main-row  d-flex justify-content-center ">
+
+                <div class="col-lg-8  main-column-1   ">
+                    <div class="d-flex justify-content-end  my-4">
+                        <button onclick="location.href='submit_request.html'" type="button" type="button"
+                            class=" btn ">Back</button>
+
+                    </div>
+                    <div class="shadow-lg container">
+                        <div class="row">
+
+                            <p class="h4 mt-4">patient information</p>
+
+
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <!-- give margin left 1 rem in css to label -->
+                                <label class="ms-2  " for="floatingTextarea2">Enter Brief Details Of
+                                    Symptoms</label>
+                            </div>
+                            <div class="form-floating mb-3 col-lg-6">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput">First Name</label>
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Last Name">
+                                <label class="ms-2 " for="floatingPassword">Last Name</label>
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="date" class="form-control" id="floatingPassword" placeholder="Last Name">
+                                <label class="ms-2 " for="floatingPassword">Date Of Birth</label>
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <p class="h4 mt-4">patient contact information</p>
+
+
+                            <div class="form-floating col-lg-6 ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2  " for="floatingInput" id="username-input">Email</label>
+
+                            </div>
+                            <!-- <div class="form-floating col-lg-6 ">
+                                <input type="tel" class="form-control" id="floatingPassword" placeholder="Last Name">
+                                <label class="ms-2 " for="floatingPassword">phone number</label>
+
+                            </div> -->
+                            <div class="form-floating col-lg-6  phone-code">
+                                <input type="tel" class="form-control phone-input phone" id="phone">
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <p class="h4 mt-4">patient location</p>
+
+
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">street</label>
+
+                            </div>
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">city</label>
+
+                            </div>
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">state</label>
+
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">zip code</label>
+
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">Room # /
+                                    Suite(Optional)</label>
+
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <p class="h4 mt-4">(Optional) Upload Photo Or Document</p>
+                            <!-- <div class="form-floating col-lg-12">
+                                <button></button>
+                            </div> -->
+                            <!-- <div class="input-group mb-3 d-flex justify-content-between align-items-center mt-2">
+    
+                                <button class="select-btn" onclick="document.getElementById('fu').click()">
+                                    select files
+    
+                                </button>
+                                <div class="">
+                                    <input class="upload-btn" type="button" value="Upload" class=""
+                                        onclick="document.getElementById('fu').click()" />
+                                    <span id="fileName"></span>
+                                    <input type="file" id="fu" onchange="FileSelected()" style="width: 0;">
+                                </div>
+                            </div> -->
+                            <div>
+                                <label for="fileinput" class="selectfile  rounded d-flex justify-content-between">
+                                    <p class="m-2">Select File</p>
+                                    <input type="file" id="fileinput" style="display: none;">
+                                    <div class="upload-btn p-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z" />
+                                            <path
+                                                d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                                        </svg>
+                                        Upload
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="container d-flex justify-content-end my-3 ">
+                                <button type="button" class="btn btn-info me-2">Submit</button>
+                                <button type="button" class="btn btn-transparent border border-2">Cancle</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="footer">
+        <a href="" class="text-decoration-none terms ">Terms of Conditions <span class="vr" id="vr1"> </span>
+            Privacy Policy</a>
+
+    </div>
+    <!-- ---------------jsjsjsjsjsjs---------------->
+    <script>
+        function FileSelected(e) {
+            file = document.getElementById('fu').files[document.getElementById('fu').files.length - 1];
+            document.getElementById('fileName').innerHtml = file.name;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
