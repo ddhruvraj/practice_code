@@ -1,5 +1,12 @@
+
+body{
+    overflow: hidden;
+    
+}
 .container-fluid {
     min-height: 100vh;
+    padding: 0;
+    /* margin: 0; */
 }
 
 @media screen and (max-width:991px) {
@@ -36,9 +43,11 @@
 }
 
 .darkmode-div {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: right;
+    margin-top: 2%;
+    margin-right: 3%;
 
 }
 
@@ -58,15 +67,15 @@
 
 .form-floating {
     width: 60%;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
     color: #08BCEB;
-    box-shadow: none;
-    border: none;
+    /* box-shadow: none;
+    border: none; */
     /* border-radius: 20px; */
 }
 
@@ -75,22 +84,28 @@
     right: 1px;
     top: 1px;
     margin-top: 13px;
-    margin-right: 10px;
+    /* margin-right: 2%; */
     background-color: #fafafa;
     width: 30px;
     height: 70%;
     border: none;
 }
 
+.input-icon1 {
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
 .login-btn {
     background-color: #08BCEB;
     width: 60%;
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .forgot-pw {
     color: #08BCEB;
     text-decoration: none;
+    margin-top: 2%;
 }
 
 .terms-div {
@@ -99,11 +114,13 @@
 
 #terms {
     font-size: smaller;
-    
+
 }
-.logo-img{
-    margin-top:auto;
+
+.logo-img {
+    margin-top: auto;
 }
-#heading{
+
+#heading {
     margin-top: 5%;
 }

@@ -60,8 +60,8 @@
 
 
 }
-.footer {
-    position: sticky;
+#footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -72,13 +72,13 @@
 
 }
 
-.terms {
+/* .terms {
     color: white;
     margin-right: 2%;
     font-size: small;
     margin-bottom: -2%;
 
-}
+} */
 #form-floating {
     /* width: 100vw ; */
     position: relative;
@@ -119,4 +119,10 @@ z-index: 3 !important;
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
     color: #08BCEB;
+}
+#terms1,#terms2{
+    font-size: smaller;
+}
+#main_box{
+    border-radius: 10px;
 }

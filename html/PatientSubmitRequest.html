@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\css\bootstrap.min.css">
+    <script src="\js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="\css\PatientSubmitRequest.css">
+    <script src="\js\PatientSubmitRequest.js"></script>
+</head>
+
+<body onload="load()">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <img class="logo-img-1" src="\images\Fig56._Patient_site_1.png" alt="">
+
+
+            <div class="darkmode-div">
+                <button id="darkmode-btn" onclick="myFunction()">
+                    <img class="darkmode-img" src="\images\moon.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid ">
+        <div class="main-container">
+            <div class="row main-row  d-flex justify-content-center vh-100">
+                <div class="col-xl-6  main-column-1 ">
+                    <div class="text-btn-div">
+                        <h3 class="fw-bold" id="heading_text">I am a...</h3>
+                        <button onclick="location.href='/html/PatientSite.html'" id="back-btn">&lt; Back</button>
+                    </div>
+                    <button onclick="location.href='/html/PatientInfoForm.html'" type="button"
+                        class="login-button btn1 ">PATIENT</button>
+                    <button onclick="location.href='/html/PatientFamilyFriendForm.html'" type="button"
+                        class="login-button btn2">FAMILY/FRIEND</button>
+                    <button onclick="location.href='/html/PatientConciergeInfo.html'" type="button"
+                        class="login-button btn3">CONCIERGE</button>
+                    <button onclick="location.href='/html/PatientBusinessInfo.html'" type="button"
+                        class="login-button btn4 ">BUSINESS
+                        PARTNERS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="mt-3 me-3">
+            <a href="" class="text-decoration-none" id="terms1"> Terms of Conditions </a>
+            <span class="vr mx-3" id="vr1"></span>
+            <a href="" class="text-decoration-none" id="terms2">Privacy Policy</a>
+
+        </div>
+    </div>
+</body>
+
+</html>

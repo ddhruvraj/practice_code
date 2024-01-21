@@ -7,10 +7,10 @@
     <title>create patient request form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <link rel="stylesheet" href="css\bootstrap.min.css">
-    <script src="js\bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css\create_patient_request.css">
-    <script src="js\platform_login.js"></script>
+    <link rel="stylesheet" href="\css\bootstrap.min.css">
+    <script src="\js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="\css\PatientBusinessInfo.css">
+    <script src="\js\PatientBusinessInfo.js"></script>
 </head>
 
 <body onload="load()">
@@ -30,7 +30,7 @@
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 
                 <div class="modal-body d-flex justify-content-center align-items-center mt-4">
-                    <img style="width: 100px; height: 100px;" src="images\info_img1.jpeg" alt="">
+                    <img style="width: 100px; height: 100px;" src="\images\info_img1.jpeg" alt="">
                 </div>
                 <h3 class="text-center mb-2">Information</h3>
                 <p class="text-center mx-5">when submitting a request you must provide the correct contact information
@@ -46,12 +46,12 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-            <img class="logo-img-1" src="images\Fig56._Patient_site_1.png" alt="">
+            <img class="logo-img-1" src="\images\Fig56._Patient_site_1.png" alt="">
 
 
             <div class="darkmode-div">
                 <button id="darkmode-btn" onclick="myFunction()">
-                    <img class="darkmode-img" src="images\moon.svg" alt="">
+                    <img class="darkmode-img" src="\images\moon.svg" alt="">
                 </button>
             </div>
         </div>
@@ -66,11 +66,11 @@
                 
                 <div class="col-lg-8  main-column-1   ">
                     <div class="d-flex justify-content-end  my-4" style=" justify-content: center;">
-                        <button onclick="location.href='submit_request.html'" type="button" class="back-btn btn ms-auto">Back</button>
+                        <button onclick="location.href='/html/PatientSubmitRequest.html'" type="button" class="back-btn btn ms-auto">Back</button>
                     </div>
-                    <div class="shadow-lg container">
+                    <div class="shadow-lg container" id="main_box">
                         <div class="row">
-                            <p class="h4 mt-4">Family/Friend Information</p>
+                            <p class="h4 mt-4">Concierge Information</p>
     
     
                             <div class="form-floating col-lg-6 mb-3">
@@ -88,7 +88,7 @@
                                 <label  class="ms-2 " for="floatingInput" id="username-input">Phone number</label>
     
                             </div> -->
-                            <div class="form-floating col-lg-6 phone-code">
+                            <div class="form-floating col-lg-6 mb-3 phone-code">
                                 <input type="tel" class="form-control phone-input phone" id="phone">
                             </div>
                             <div class="form-floating col-lg-6">
@@ -98,10 +98,43 @@
                             </div>
                             <div class="form-floating col-lg-6">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
-                                <label  class="ms-2 " for="floatingInput" id="username-input">Relation With Patient</label>
+                                <label  class="ms-2 " for="floatingInput" id="username-input">Business/Property Name</label>
+    
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label  class="ms-2 " for="floatingInput" id="username-input">Case Number (optional)</label>
     
                             </div>
                         </div>
+                        <!-- <div class="row">
+                            <p class="h4 mt-4">Concierge location</p>
+    
+    
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 " for="floatingInput" id="username-input">street</label>
+    
+                            </div>
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 "  for="floatingInput" id="username-input">city</label>
+    
+                            </div>
+                            <div class="form-floating col-lg-6 mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label  class="ms-2 " for="floatingInput" id="username-input">state</label>
+    
+                            </div>
+                            <div class="form-floating col-lg-6">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                                <label class="ms-2 "  for="floatingInput" id="username-input">zip code</label>
+    
+                            </div>
+                            
+                        </div> -->
+                    
+
                         <div class="row">
                         
                             <p class="h4 mt-4">patient information</p>
@@ -142,7 +175,7 @@
                                 <label class="ms-2 " for="floatingPassword">phone number</label>
     
                             </div> -->
-                            <div class="form-floating col-lg-6 phone-code">
+                            <div class="form-floating col-lg-6 mb-3 phone-code">
                                 <input type="tel" class="form-control phone-input phone" id="phone">
                             </div>
     
@@ -179,7 +212,7 @@
                             </div>
                         </div>
                         <div class="row ">
-                            <p class="h4 mt-4">(Optional) Upload Photo Or Document</p>
+                            <!-- <p class="h4 mt-4">(Optional) Upload Photo Or Document</p> -->
                             <!-- <div class="form-floating col-lg-12">
                                 <button></button>
                             </div> -->
@@ -196,7 +229,7 @@
                                     <input type="file" id="fu" onchange="FileSelected()" style="width: 0;">
                                 </div>
                             </div> -->
-                            <div>
+                            <!-- <div>
                                 <label for="fileinput" class="selectfile  rounded d-flex justify-content-between">
                                         <p class="m-2">Select File</p>
                                         <input type="file" id="fileinput" style="display: none;">
@@ -208,7 +241,7 @@
                                             Upload
                                         </div>
                                 </label>
-                            </div>
+                            </div> -->
                             <div class="container d-flex justify-content-end my-3 ">
                                 <button type="button" class="btn btn-info me-2">Submit</button>
                                 <button type="button" class="btn btn-transparent border border-2">Cancle</button>
@@ -220,20 +253,22 @@
                     </div>
             </div>
         </div>
-    </form>
+    </form> 
 
-        <div class="footer">
-            <a href="" class="text-decoration-none terms ">Terms of Conditions <span class="vr" id="vr1"> </span>
-                Privacy Policy</a>
-
-        </div>
+    <div id="footer">
+        <div class="mt-3 me-3">
+            <a href="" class="text-decoration-none" id="terms1"> Terms of Conditions </a>
+            <span class="vr " id="vr1"></span>
+            <a href="" class="text-decoration-none" id="terms2">Privacy Policy</a>
+        </div>    
+    </div>
         <!-- ---------------jsjsjsjsjsjs---------------->
-        <script>
+        <!-- <script>
             function FileSelected(e) {
                 file = document.getElementById('fu').files[document.getElementById('fu').files.length - 1];
                 document.getElementById('fileName').innerHtml = file.name;
             }
-        </script>
+        </script> -->
 
 </body>
 
